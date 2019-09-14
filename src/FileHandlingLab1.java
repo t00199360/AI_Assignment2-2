@@ -41,14 +41,19 @@ public class FileHandlingLab1
         }
         System.out.println("size of file: " + size);
 
+        long startTimeAList = System.nanoTime();
         testGetForArrayList(myAList);
+        long endTimeAList = System.nanoTime();
+        long duration = (endTimeAList - startTimeAList);
+        System.out.println("The duration of the method get ArrayList in milliseconds is: " + duration/1000000);
+
 
         long startTime = System.nanoTime();
         testGetForLinkedList(myLList);
         long endTime = System.nanoTime();
 
-        long duration = (endTime - startTime);
-        System.out.println("The duration of the method get LinkedList in milliseconds is: " + duration/1000000);
+        long durationLinkedList = (endTime - startTime);
+        System.out.println("The duration of the method get LinkedList in milliseconds is: " + durationLinkedList/1000000);
 
     }
     public static void testGetForArrayList (ArrayList list)
