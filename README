@@ -1,2 +1,4 @@
 .ipynb files sometimes do not render in github. If this occurs please use https://nbviewer.jupyter.org/ and paste the file path to view in the search bar
 an old repo was used for this as for some reason colab would not save to a new repo
+draughts.ipynb is an old attempt
+draughtsassignmentnew is the up to date notebook
